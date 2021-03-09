@@ -1,0 +1,61 @@
+<template>
+  <div class="dropdown">
+    <NuxtLink to="/">Home</NuxtLink>
+    <NuxtLink to="/blog">Blog</NuxtLink>
+    <NuxtLink to="/about">About</NuxtLink>
+    <NuxtLink to="/work">My Work</NuxtLink>
+    <!-- <NuxtLink to="/contact">Contact</NuxtLink> -->
+    <select>
+      <option value="eng">English</option>
+      <option value="cn">Chinese</option>
+    </select>
+  </div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style scoped>
+.dropdown {
+  position: absolute;
+  top: 66px;
+  right: 8px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+.dropdown:after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  width: 0;
+  border-style: solid;
+  border-width: 0 10px 10px;
+  display: block;
+  top: -10px;
+  border-color: #fff transparent;
+  z-index: 1;
+}
+select {
+  margin: 10px;
+}
+a {
+  text-decoration: none;
+  padding: 10px;
+  width: 150px;
+  color: #313131;
+  font-weight: 500;
+  border-bottom: 1px solid #f2f3f3;
+}
+a.nuxt-link-exact-active {
+}
+@media (min-width: 992px) {
+  .dropdown {
+    display: none;
+  }
+}
+</style>
