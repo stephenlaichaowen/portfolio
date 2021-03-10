@@ -17,9 +17,11 @@
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12",
-    "nuxt-i18n": "^6.20.6"
+    "nuxt-i18n": "^6.20.6",
+    "vue-i18n": "^8.24.0"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.2",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
     "prettier": "^2.2.1"

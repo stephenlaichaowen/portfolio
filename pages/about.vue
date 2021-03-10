@@ -1,17 +1,15 @@
 <template>
-  <div>
-    <h1>About page</h1>
+  <div class="about-page">
+    <h1>{{ $t('navbarAbout') }}</h1>
   </div>
 </template>
 
 <script>
 export default {
-   created() {
+  created() {
     this.$store.commit('showHomePage', false)
-  }
+  },
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

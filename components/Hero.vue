@@ -1,25 +1,22 @@
 <template>
-  <!-- <div class="hero" v-if="isHomepage"> -->
   <div class="hero">
     <div class="container">
-      <h1>Full Stack Web Developer</h1>
+      <h1>{{ $t('subtitle') }}</h1>
       <h2 class="skills">
         <span class="title-1">VueJS,</span>
         <span class="title-2">ReactJS,</span>
-        <span class="title-3">SvelteJS,</span>
+        <span class="title-3">AngularJS,</span>
         <span class="title-4">NodeJS</span>
       </h2>
-      <button class="btn-work">My Work</button>
-      <button class="btn-contact">Contact Me</button>
+      <button class="btn-work" @click="$router.push('/work')">
+        {{ $t('heroBtnWork') }}
+      </button>
+      <button class="btn-contact" @click="$router.push('/contact')">
+        {{ $t('heroBtnContact') }}
+      </button>
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  props: ['isHomepage']
-}
-</script>
 
 <style scoped>
 .hero {
@@ -34,9 +31,6 @@ export default {
   justify-content: center;
   text-align: center;
   color: white;
-}
-.container {
-  /* border: 1px solid red; */
 }
 h1 {
   font-size: 48px;

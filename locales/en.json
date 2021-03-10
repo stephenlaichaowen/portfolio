@@ -1,0 +1,19 @@
+{
+  "homepage": "Home page",
+  "optionText": "Select",
+  "option": "English",
+  "title": "stephen lai",
+  "subtitle": "Full Stack Web Developer",
+  "navbarHome": "Home",
+  "navbarBlog": "Blog",
+  "navbarAbout": "About",
+  "navbarWork": "My Work",
+  "sidebarLocation": "Taipei, ROC",
+  "sidebarEmail": "Email Me",
+  "sidebarGithub": "Github",
+  "sidebarFacebook": "Facebook",
+  "sidebarMedium": "Medium",
+  "btnFollow": "Follow",
+  "heroBtnWork": "My Work",
+  "heroBtnContact": "Contact"
+}

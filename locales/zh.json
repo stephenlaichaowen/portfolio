@@ -1,0 +1,19 @@
+{
+  "homepage": "首頁",
+  "optionEng": "英文",
+  "optionCn": "中文",
+  "title": "史帝芬賴",
+  "subtitle": "全端工程師",
+  "navbarHome": "首頁",
+  "navbarBlog": "部落格",
+  "navbarAbout": "關於我",
+  "navbarWork": "作品集",
+  "sidebarLocation": "中華民國台北",
+  "sidebarEmail": "電子信箱",
+  "sidebarGithub": "Github",
+  "sidebarFacebook": "臉書",
+  "sidebarMedium": "Medium",
+  "btnFollow": "追蹤我",
+  "heroBtnWork": "作品集",
+  "heroBtnContact": "聯絡我"
+}

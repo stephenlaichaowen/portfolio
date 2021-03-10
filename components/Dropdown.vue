@@ -1,19 +1,23 @@
 <template>
   <div class="dropdown">
-    <NuxtLink to="/">Home</NuxtLink>
-    <NuxtLink to="/blog">Blog</NuxtLink>
-    <NuxtLink to="/about">About</NuxtLink>
-    <NuxtLink to="/work">My Work</NuxtLink>
-    <!-- <NuxtLink to="/contact">Contact</NuxtLink> -->
-    <select>
-      <option value="eng">English</option>
-      <option value="cn">Chinese</option>
-    </select>
+    <NuxtLink to="/">{{ $t('navbarHome') }}</NuxtLink>
+    <NuxtLink to="/blog">{{ $t('navbarBlog') }}</NuxtLink>
+    <NuxtLink to="/about">{{ $t('navbarAbout') }}</NuxtLink>
+    <NuxtLink to="/work">{{ $t('navbarWork') }}</NuxtLink>
+    <LangSwitcher />
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      lang: ''
+    }
+  },
+  mounted() {
+  }
+}
 </script>
 
 <style scoped>

@@ -1,4 +1,5 @@
 export const state = {
-  homePage: false,
-  lang: null
+  homePage: true,
+  lang: 'en'
+  // lang: process.server ? '' : !!localStorage.getItem('lang')
 }

@@ -11,48 +11,20 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  css: [],
-
-  plugins: [],
-
   components: true,
 
-  buildModules: [],
+  plugins: ['~/plugins/i18n.js'],
 
   modules: [
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxt/content',
-    [
-      'nuxt-i18n',
-      {
-        locales: ['en', 'zh'],
-        defaultLocale: 'en',
-        vueI18n: {
-          fallbackLocale: 'en',
-          messages: {
-            en: {
-              homepage: 'Home page',
-            },
-            zh: {
-              homepage: '首頁',
-            },
-          },
-        },
-      },
-    ],
+    '@nuxt/content'
   ],
-
-  axios: {},
 
   pwa: {
     manifest: {
       lang: 'en',
     },
   },
-
-  content: {},
-
-  build: {},
 }

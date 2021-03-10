@@ -20,6 +20,8 @@
 
 :root {
   --primary: #278f6e;
+  --item: #707070;
+  --subtitle: #313131;
   --bottom: 1px solid #efefef;
   --brDefault: 30px;
 }
@@ -35,6 +37,7 @@
 html,
 body {
   font-family: 'Rubik', sans-serif;
+  background: var(--bg-color);
 }
 
 main {

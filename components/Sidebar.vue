@@ -6,49 +6,49 @@
           <img class="avatar" src="/images/ninja.png" alt="me image" />
         </div>
         <div class="text">
-          <div class="title">Stephen Lai</div>
-          <div class="subtitle">Full Stack Web Developer</div>
+          <div class="title">{{ $t('title') }}</div>
+          <div class="subtitle">{{ $t('subtitle') }}</div>
         </div>
       </div>
       <div class="btn-box">
-        <button>Follow</button>
+        <button>{{ $t('btnFollow') }}</button>
       </div>
     </div>
     <ul>
       <li>
         <a href="/">
           <img src="/images/location.png" alt="location icon" />
-          <span class="info">Taipei, ROC</span>
+          <span class="info">{{ $t('sidebarLocation') }}</span>
         </a>
       </li>
       <li>
         <a href="/">
           <img src="/images/gmail.png" alt="gmail icon" />
-          <span class="info">Email Me</span>
+          <span class="info">{{ $t('sidebarEmail') }}</span>
         </a>
       </li>
       <li>
         <a href="/">
           <img src="/images/github.png" alt="github icon" />
-          <span class="info">Github</span>
+          <span class="info">{{ $t('sidebarGithub') }}</span>
         </a>
       </li>
       <li>
         <a href="/">
           <img src="/images/facebook.png" alt="email icon" />
-          <span class="info">Facebook</span>
+          <span class="info">{{ $t('sidebarFacebook') }}</span>
         </a>
       </li>
       <li>
         <a href="/">
           <img src="/images/medium.png" alt="medium icon" />
-          <span class="info">Medium</span>
+          <span class="info">{{ $t('sidebarMedium') }}</span>
         </a>
       </li>
       <li>
         <a href="/">
           <img src="/images/medium.png" alt="medium icon" />
-          <span class="info">Medium</span>
+          <span class="info">{{ $t('sidebarMedium') }}</span>
         </a>
       </li>
     </ul>
@@ -87,7 +87,7 @@ img {
 }
 .subtitle {
   font-size: 18px;
-  color: #313131;
+  color: var(--subtitle);
   font-weight: 300;
 }
 button {
@@ -114,7 +114,7 @@ a {
 }
 .info {
   font-size: 20px;
-  color: #707070;
+  color: var(--item);
   font-weight: 300;
 }
 .text {

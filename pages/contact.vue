@@ -1,17 +1,15 @@
 <template>
-  <div>
-    <h1>Contact page</h1>
+  <div class="contact-page">
+    <h1>{{ $t('heroBtnContact') }}</h1>
   </div>
 </template>
 
 <script>
 export default {
-   created() {
+  created() {
     this.$store.commit('showHomePage', false)
-  }
+  },
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
