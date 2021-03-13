@@ -5,10 +5,6 @@ description: 'In this video we will discuss what Markdown is, what it is used fo
 image: https://i2.wp.com/ansidev.cloudaccess.host/wp-content/uploads/2019/04/nuxtjs.png?fit=307%2C307&ssl=1
 ---
 
-<img src="/images/github.png" width="30" height="30">
-
----
-
 <!-- Headings -->
 # Heading 1
 ## Heading 2
