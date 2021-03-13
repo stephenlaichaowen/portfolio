@@ -3,7 +3,7 @@
     <div class="top">
       <div class="left">
         <div class="image-box">
-          <img class="avatar" src="/images/ninja.png" alt="me image" />
+          <img class="avatar" src="/icon.png" alt="me image" />
         </div>
         <div class="text">
           <div class="title">{{ $t('title') }}</div>

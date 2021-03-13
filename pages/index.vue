@@ -60,7 +60,7 @@ export default {
   display: flex;
 }
 .post {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .post-title {
   font-size: 30px;

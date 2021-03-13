@@ -3,9 +3,11 @@
     <div class="container">
       <h1>{{ $t('subtitle') }}</h1>
       <h2 class="skills">
-        <span class="title-1">VueJS/NuxtJS,</span>
-        <span class="title-2">ReactJS/NextJS,</span>
-        <span class="title-4">Express/NodeJS</span>
+        <span class="title-1">VueJS,</span>
+        <span class="title-2">ReactJS,</span>
+        <span class="title-3">NodeJS,</span>
+        <span class="title-4">Firebase,</span>
+        <span class="title-5">MongoDB</span>
       </h2>
       <button class="btn-work" @click="$router.push('/work')">
         {{ $t('heroBtnWork') }}
@@ -50,7 +52,10 @@ span {
   color: #ff3e00;
 }
 .title-4 {
-  color: #026e00;
+  color: #ffca28;
+}
+.title-5 {
+  color: #13aa52;
 }
 h2 {
   margin-bottom: 30px;

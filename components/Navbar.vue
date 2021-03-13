@@ -13,13 +13,7 @@
               <NuxtLink to="/about">{{ $t('navbarAbout') }}</NuxtLink>
               <NuxtLink to="/work">{{ $t('navbarWork') }}</NuxtLink>
               <LangSwitcher />
-            </div>
-            <span class="hamburger" @click="isToggle = !isToggle">
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-            </span>
-            <div class="dark-box" @click="toggleMode">
+              <div class="dark-box" @click="toggleMode">
               <svg
                 :class="{ 'dark-mode': isDarkmode }"
                 class="w-6 h-6"
@@ -32,6 +26,13 @@
                 ></path>
               </svg>
             </div>
+            </div>
+            <span class="hamburger" @click="isToggle = !isToggle">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </span>
+            
           </div>
           <Dropdown v-if="isToggle" />
         </b-col>
@@ -110,7 +111,7 @@ export default {
 .dark-box {
   display: flex;
   align-items: center;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 .dark-mode {
   background: #c3e6cb;

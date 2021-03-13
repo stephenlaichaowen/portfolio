@@ -1,15 +1,13 @@
 ---
-title: Getting Started
+title: Build a Blog website with @nuxt/content
 date: March 13th, 2021
-description: 'Empower your NuxtJS application with @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS.'
+description: 'NuxtJS content module is a powerful modle that makes you build blog website easy and enjoyable'
 image: https://i2.wp.com/ansidev.cloudaccess.host/wp-content/uploads/2019/04/nuxtjs.png?fit=307%2C307&ssl=1
 ---
 
-Empower your NuxtJS application with `@nuxtjs/content` module: write in a `content/` directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a **Git-based Headless CMS**.
-
-## Writing content
-
 Learn how to write your `content/`, supporting Markdown, YAML, CSV and JSON: https://content.nuxtjs.org/writing.
+
+<Test />
 
 ## Fetching content
 
@@ -25,3 +23,7 @@ Learn how to display your Markdown content with the `<nuxt-content>` component d
 npm i
 
 ```
+
+<style scoped>
+
+</style>

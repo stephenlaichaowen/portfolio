@@ -1,5 +1,5 @@
 ---
-title: 'Markdown Crash Course'
+title: Markdown Crash Course
 date: March 13th, 2021
 description: 'In this video we will discuss what Markdown is, what it is used for and we will jump into VSCode and learn the entire syntax in around 10 minutes. We will also push to a Github repo to see what it looks like there.'
 image: https://i2.wp.com/ansidev.cloudaccess.host/wp-content/uploads/2019/04/nuxtjs.png?fit=307%2C307&ssl=1

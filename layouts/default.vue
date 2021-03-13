@@ -12,6 +12,7 @@
         </b-col>
       </b-row>
     </b-container>
+    <Foot />
   </div>
 </template>
 
@@ -20,9 +21,11 @@
 
 :root {
   --primary: #278f6e;
-  --secondary: #374A59;
+  --secondary: #374a59;
   --light: #afafaf;
+  --lighter: #979797;
   --item: #707070;
+  --light-gray: #efefef;
   --subtitle: #313131;
   --bottom: 1px solid #efefef;
   --brDefault: 30px;
@@ -52,6 +55,10 @@ main {
 
 .wrapper {
   padding-top: 50px;
+}
+
+.foot {
+  margin-top: 3rem;
 }
 
 @media (max-width: 992px) {
