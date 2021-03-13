@@ -3,10 +3,9 @@
     <div class="container">
       <h1>{{ $t('subtitle') }}</h1>
       <h2 class="skills">
-        <span class="title-1">VueJS,</span>
-        <span class="title-2">ReactJS,</span>
-        <span class="title-3">AngularJS,</span>
-        <span class="title-4">NodeJS</span>
+        <span class="title-1">VueJS/NuxtJS,</span>
+        <span class="title-2">ReactJS/NextJS,</span>
+        <span class="title-4">Express/NodeJS</span>
       </h2>
       <button class="btn-work" @click="$router.push('/work')">
         {{ $t('heroBtnWork') }}

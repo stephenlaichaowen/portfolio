@@ -1,27 +1,15 @@
 <template>
-  <article>
+  <div class="blog-page">
+    <h2 class="page-title">Blog</h2>
+    <h2 class="section-title">Latest articles on web development</h2>
     <div class="post" v-for="post in posts" :key="post.title">
       <NuxtLink :to="`/blog/${post.slug}`">
         <h1 class="post-title">{{ post.title }}</h1>
       </NuxtLink>
-      <p class="post-date">
-        <svg class="w-6 h-6 icon-clock" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-        <span>{{ post.date }}</span>        
-      </p>
-      <div class="content">
-        <div class="right">
-          <p class="post-desc">{{ post.description.substring(0, 180) + ' ....' }}</p>
-        </div>
-        <!-- <div class="left">
-          <img
-            :src="post.image"
-            alt="facebook image"
-            width="80"
-          />
-        </div> -->
-      </div>
+      <p class="post-date">{{ post.date }}</p>
+      <p class="post-desc">{{ post.description.substring(0, 180) + ' ....' }}</p>
     </div>
-  </article>
+  </div>
 </template>
 
 <script>
@@ -32,32 +20,25 @@ export default {
     return { posts }
   },
   created() {
-    this.$store.commit('showHomePage', true)
+    this.$store.commit('showHomePage', false)
   },
-  computed: {
-    truncatedDesc() {
-      return 
-    }
-  }
 }
 </script>
 
 <style scoped>
-.icon-clock {
-  width: 16px;
-  height: 16px;
+.page-title {
+  color: #979797;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
-.left {
-  display: flex;
-  align-items: flex-start;
-  margin-right: .8rem;
-}
-.left img {
-  border-radius: .5rem;
-
-}
-.content {
-  display: flex;
+.section-title {
+  color: var(--primary);
+  font-size: 30px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  border-bottom: 1px solid #efefef;
 }
 .post {
   margin-bottom: 3rem;
@@ -90,7 +71,7 @@ a .post-title:hover {
 }
 @media (max-width: 768px) {
   .section-title {
-    font-size: 26px;
+    font-size: 26px;    
   }
   .post-title {
     font-size: 26px;

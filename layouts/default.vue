@@ -20,6 +20,8 @@
 
 :root {
   --primary: #278f6e;
+  --secondary: #374A59;
+  --light: #afafaf;
   --item: #707070;
   --subtitle: #313131;
   --bottom: 1px solid #efefef;

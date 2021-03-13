@@ -22,6 +22,8 @@ export default {
     '@nuxt/content'
   ],
 
+  buildModules: ['@nuxt/image'],
+
   pwa: {
     manifest: {
       lang: 'en',
