@@ -43,19 +43,19 @@ span {
   font-weight: 300;
 }
 .title-1 {
-  color: #4fc08d;
+  color: var(--vue-green);
 }
 .title-2 {
-  color: #61fafb;
+  color: var(--react-blue);
 }
 .title-3 {
-  color: #ff3e00;
+  color: var(--node-red);
 }
 .title-4 {
-  color: #ffca28;
+  color: var(--fb-yellow);
 }
 .title-5 {
-  color: #13aa52;
+  color: var(--mongo-green);
 }
 h2 {
   margin-bottom: 30px;

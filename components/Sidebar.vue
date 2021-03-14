@@ -85,7 +85,7 @@ img {
 }
 .subtitle {
   font-size: 18px;
-  color: var(--subtitle);
+  color: var(--light-900);
   font-weight: 300;
 }
 button {
@@ -115,7 +115,7 @@ a {
 }
 .info {
   font-size: 20px;
-  color: var(--item);
+  color: var(--light-700);
   font-weight: 300;
 }
 .text {
@@ -158,7 +158,7 @@ a {
     display: block;
     height: 40px;
     padding: 0 30px;
-    border-radius: var(--brDefault);
+    border-radius: 30px;
     border: 2px solid var(--primary);
     font-size: 14px;
     background: white;
@@ -202,17 +202,6 @@ a {
   .subtitle {
     font-size: 16px;
   }
-  button {
-    display: block;
-    height: 40px;
-    padding: 0 30px;
-    border-radius: var(--brDefault);
-    border: 2px solid var(--primary);
-    font-size: 14px;
-    background: white;
-    color: var(--primary);
-    font-weight: 300;
-  }
 }
 @media (max-width: 575px) {
   .avatar {
@@ -238,17 +227,6 @@ a {
   }
   .subtitle {
     font-size: 13px;
-  }
-  button {
-    display: block;
-    height: 36px;
-    padding: 0 18px;
-    border-radius: var(--brDefault);
-    border: 2px solid var(--primary);
-    font-size: 14px;
-    background: white;
-    color: var(--primary);
-    font-weight: 300;
   }
 }
 </style>

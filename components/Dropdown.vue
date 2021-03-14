@@ -5,6 +5,9 @@
     <NuxtLink to="/about">{{ $t('navbarAbout') }}</NuxtLink>
     <NuxtLink to="/work">{{ $t('navbarWork') }}</NuxtLink>
     <LangSwitcher />
+    <div class="switch">
+      <ModeSwitcher />
+    </div>
   </div>
 </template>
 
@@ -12,11 +15,10 @@
 export default {
   data() {
     return {
-      lang: ''
+      lang: '',
     }
   },
-  mounted() {
-  }
+  mounted() {},
 }
 </script>
 
@@ -35,7 +37,7 @@ export default {
 .dropdown:after {
   content: '';
   position: absolute;
-  right: 15px;
+  right: 8px;
   width: 0;
   border-style: solid;
   border-width: 0 10px 10px;
@@ -46,16 +48,23 @@ export default {
 }
 select {
   margin: 10px;
+  padding: 5px;
+}
+.switch {
+  margin: 10px;
+  /* display: flex;
+  justify-content: center; */
 }
 a {
   text-decoration: none;
   padding: 10px;
   width: 150px;
-  color: #313131;
+  color: #707070;
   font-weight: 500;
   border-bottom: 1px solid #f2f3f3;
 }
 a.nuxt-link-exact-active {
+  color: var(--primary);
 }
 @media (min-width: 992px) {
   .dropdown {

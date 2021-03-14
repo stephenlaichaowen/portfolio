@@ -12,29 +12,20 @@
               <NuxtLink to="/blog">{{ $t('navbarBlog') }}</NuxtLink>
               <NuxtLink to="/about">{{ $t('navbarAbout') }}</NuxtLink>
               <NuxtLink to="/work">{{ $t('navbarWork') }}</NuxtLink>
+              <NuxtLink to="/contact">{{ $t('navbarContact') }}</NuxtLink>
               <LangSwitcher />
-              <div class="dark-box" @click="toggleMode">
-              <svg
-                :class="{ 'dark-mode': isDarkmode }"
-                class="w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                ></path>
-              </svg>
+              <ModeSwitcher />
             </div>
-            </div>
-            <span class="hamburger" @click="isToggle = !isToggle">
+            <!-- <span class="hamburger" @click="toggle"> -->
+            <span class="hamburger" @click="$store.commit('toggle')">
               <span class="line"></span>
               <span class="line"></span>
               <span class="line"></span>
             </span>
-            
           </div>
-          <Dropdown v-if="isToggle" />
+          <transition>
+            <Dropdown v-if="$store.state.isToggle" />
+          </transition>
         </b-col>
       </b-row>
     </b-container>
@@ -47,22 +38,14 @@ export default {
     return {
       selected: '',
       isToggle: false,
-      isDarkmode: false,
     }
   },
   methods: {
-    toggleDropdown() {
-      isToggle = !isToggle
-    },
-    toggleMode() {
-      this.isDarkmode = !this.isDarkmode
-      if (this.isDarkmode) console.log(`mode: Dark`)
-      if (!this.isDarkmode) console.log(`mode: Light`)
-    },
-  },
-  mounted() {
-    if (this.isDarkmode) console.log(`mode: Dark`)
-    if (!this.isDarkmode) console.log(`mode: Light`)
+    toggle() {
+      this.isToggle = !this.isToggle
+      // if (this.$store.state)
+      this.$store.commit('toggle', this.isToggle)
+    }
   },
 }
 </script>
@@ -91,7 +74,7 @@ export default {
   text-transform: uppercase;
 }
 .menu {
-  width: 525px;
+  width: 625px;
   display: flex;
   justify-content: space-between;
 }
@@ -101,20 +84,18 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   display: none;
-  /* margin-right: 0.5rem; */
 }
 .hamburger .line {
   width: 22px;
   height: 3px;
-  background: #454149;
+  background: var(--light-700);
 }
 .dark-box {
   display: flex;
   align-items: center;
-  /* margin-left: 1rem; */
 }
 .dark-mode {
-  background: #c3e6cb;
+  background: var(--vue-green);
   transition: all 0.3s ease-in;
 }
 svg {
@@ -163,7 +144,7 @@ svg {
 }
 a {
   text-decoration: none;
-  color: var(--item);
+  color: var(--light-700);
   font-size: 22px;
   font-weight: 300;
 }

@@ -20,6 +20,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxt/content',
+    '@nuxtjs/axios'
   ],
 
   buildModules: ['@nuxt/image'],

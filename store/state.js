@@ -1,5 +1,5 @@
 export const state = {
   homePage: true,
-  lang: 'en'
-  // lang: process.server ? '' : !!localStorage.getItem('lang')
+  lang: 'en',
+  isToggle: false
 }

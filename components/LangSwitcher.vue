@@ -33,9 +33,16 @@ export default {
     },
   },
   mounted() {
-    // this.selectedValue = localStorage.getItem('lang')
     console.log(`store: ${this.$store.state.lang}`)
     console.log(`localStore: ${localStorage.getItem('lang')}`)
   },
 }
 </script>
+
+<style scoped>
+select option {
+  border: 1px solid var(--light-700);
+  /* color: var(--light-700); */
+  color: #707070;
+}
+</style>

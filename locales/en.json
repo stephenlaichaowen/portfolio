@@ -8,6 +8,7 @@
   "navbarBlog": "Blog",
   "navbarAbout": "About",
   "navbarWork": "My Work",
+  "navbarContact": "Contact",
   "sidebarLocation": "Taipei, ROC",
   "sidebarEmail": "Email Me",
   "sidebarGithub": "Github",
@@ -17,5 +18,17 @@
   "heroBtnWork": "My Work",
   "heroBtnContact": "Contact",
   "footMessage1": "2021 Stephen Lai - Full Stack Web Developer",
-  "footMessage2": "Built with NuxtJS"
+  "footMessage2": "Built with NuxtJS",
+  "aboutTitle": "About Me",
+  "aboutSubtitle": "Thanks for Stopping By!",
+  "aboutIntro-1": "Hello Everyone...",
+  "aboutIntro-2": " My name is Stephen Lai, I have been learning and working on web application for over three years and I am a fullstack web developer. I build web apps with all sorts of technologies especially with VueJS & ReactJS, not because they are super poplular but they have all kinds of supports, forums, and a huge ecosystem for building awesome apps",
+  "workTitle": "My Work",
+  "workSubtitle": "Here is some of my latest work",
+  "contactTitle": "Contact",
+  "contactSubtitle": "Let's collaborate & make an amazing project",
+  "contactName": "Your Name",
+  "contactEmail": "Your E-mail Address",
+  "contactMessage": "Your Message",
+  "contactSend": "Send Message"
 }

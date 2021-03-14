@@ -1,4 +1,5 @@
 <template>
+  <!-- <div @click.capture="$store.commit('closeDropdown')"> -->
   <div>
     <Navbar />
     <Hero v-if="$store.state.homePage" />
@@ -22,13 +23,29 @@
 :root {
   --primary: #278f6e;
   --secondary: #374a59;
-  --light: #afafaf;
-  --lighter: #979797;
-  --item: #707070;
-  --light-gray: #efefef;
-  --subtitle: #313131;
-  --bottom: 1px solid #efefef;
-  --brDefault: 30px;
+  --light-100: #efefef;
+  --light-300: #afafaf;
+  --light-500: #979797;
+  --light-700: #707070;
+  --light-900: #313131;
+  --vue-green: #4fc08d;
+  --react-blue: #61fafb;
+  --node-red: #ff3e00;
+  --fb-yellow: #ffca28;
+  --mongo-green: #4fc08d;
+  --bgColor: var(--light-100);
+  
+}
+
+[data-theme="dark"] {
+  --primary: #4fc08d;
+  --secondary: #374a59;
+  --light-100: #101010;
+  --light-300: #707070;
+  --light-500: #cecece;
+  --light-700: #cecece;
+  --light-900: #cecece;
+  --bgColor: #2c3e50;
 }
 
 *,
@@ -42,7 +59,9 @@
 html,
 body {
   font-family: 'Rubik', sans-serif;
-  background: var(--bg-color);
+  background: var(--bgColor);
+  display: flex;
+  flex-direction: column;
 }
 
 main {

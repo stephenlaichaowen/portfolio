@@ -12,13 +12,6 @@
         <div class="right">
           <p class="post-desc">{{ post.description.substring(0, 180) + ' ....' }}</p>
         </div>
-        <!-- <div class="left">
-          <img
-            :src="post.image"
-            alt="facebook image"
-            width="80"
-          />
-        </div> -->
       </div>
     </div>
   </article>
@@ -54,10 +47,10 @@ export default {
 }
 .left img {
   border-radius: .5rem;
-
 }
 .content {
   display: flex;
+  padding-top: 0;
 }
 .post {
   margin-bottom: 2rem;
@@ -70,7 +63,7 @@ export default {
 }
 .post-date {
   font-size: 18px;
-  color: var(--light);
+  color: var(--light-300);
   font-weight: 300;
   margin-bottom: 10px;
 }
@@ -78,7 +71,7 @@ export default {
   font-size: 20px;
   line-height: 27px;
   font-weight: 300;
-  color: var(--subtitle);
+  color: var(--light-900);
 }
 a {
   color: var(--primary);

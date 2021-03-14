@@ -27,7 +27,7 @@ export default {
 
 <style scoped>
 .page-title {
-  color: #979797;
+  color: var(--light-500);
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 10px;
@@ -38,7 +38,7 @@ export default {
   padding-bottom: 15px;
   margin-bottom: 30px;
   font-weight: 400;
-  border-bottom: 1px solid #efefef;
+  border-bottom: 1px solid var(--light-100);
 }
 .post {
   margin-bottom: 3rem;
@@ -51,7 +51,7 @@ export default {
 }
 .post-date {
   font-size: 18px;
-  color: var(--light);
+  color: var(--light-300);
   font-weight: 300;
   margin-bottom: 10px;
 }
@@ -59,7 +59,7 @@ export default {
   font-size: 20px;
   line-height: 27px;
   font-weight: 300;
-  color: var(--subtitle);
+  color: var(--light-900);
 }
 a {
   color: var(--primary);

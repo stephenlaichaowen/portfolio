@@ -9,8 +9,6 @@
               <a href="https://nuxtjs.org/">
                 {{ $t('footMessage2') }}
               </a>
-              <!-- Built with
-              <a href="https://nuxtjs.org/" target="_blank">NuxtJS</a> -->
             </p>
           </div>
         </b-col>
@@ -39,7 +37,7 @@ export default {}
   /* border: 1px solid red; */
 }
 .text {
-  color: #707070;
+  color: var(--light-700);
   font-size: 18px;
   font-weight: 300;
 }
@@ -48,9 +46,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: #707070;
-  /* font-weight: 400; */
-  /* color: var(--primary); */
+  color: var(--light-700);
 }
 @media (max-width: 768px) {
   .foot {
