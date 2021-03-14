@@ -2,15 +2,15 @@
   <div class="foot">
     <b-container>
       <b-row>
-        <b-col >
+        <b-col>
           <div class="box">
+            <p class="text">&copy; {{ $t('footMessage1') }}</p>
             <p class="text">
-              &copy; {{ $t('footMessage1') }}
-            </p>
-            <p class="text">
-              {{ $t('footMessage2') }}
-              Built with
-              <a href="https://nuxtjs.org/" target="_blank">NuxtJS</a>
+              <a href="https://nuxtjs.org/">
+                {{ $t('footMessage2') }}
+              </a>
+              <!-- Built with
+              <a href="https://nuxtjs.org/" target="_blank">NuxtJS</a> -->
             </p>
           </div>
         </b-col>
@@ -48,8 +48,9 @@ p {
 }
 a {
   text-decoration: none;
-  font-weight: 400;
-  color: var(--primary);
+  color: #707070;
+  /* font-weight: 400; */
+  /* color: var(--primary); */
 }
 @media (max-width: 768px) {
   .foot {

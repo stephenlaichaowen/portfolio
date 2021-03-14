@@ -85,4 +85,15 @@ export default {
   padding: 0 0 15px;
   border-bottom: 1px solid #efefef;
 }
+@media (max-width: 768px) {
+  .post-title {
+    font-size: 24px;
+  }
+  .post-date {
+    font-size: 16px;
+  }
+  .section-title {
+    font-size: 26px;
+  }
+}
 </style>

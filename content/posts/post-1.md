@@ -7,7 +7,6 @@ image: https://i2.wp.com/ansidev.cloudaccess.host/wp-content/uploads/2019/04/nux
 
 Learn how to write your `content/`, supporting Markdown, YAML, CSV and JSON: https://content.nuxtjs.org/writing.
 
-<Test />
 
 ## Fetching content
 
@@ -23,6 +22,8 @@ Learn how to display your Markdown content with the `<nuxt-content>` component d
 npm i
 
 ```
+
+<Test />
 
 <style scoped>
 

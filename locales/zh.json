@@ -15,5 +15,7 @@
   "sidebarMedium": "Medium",
   "btnFollow": "追蹤我",
   "heroBtnWork": "作品集",
-  "heroBtnContact": "聯絡我"
+  "heroBtnContact": "聯絡我",
+  "footMessage1": "史帝芬賴 - 全端工程師",
+  "footMessage2": "網站使用 NuxtJS 建立"
 }

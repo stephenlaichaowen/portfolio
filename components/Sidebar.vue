@@ -17,37 +17,37 @@
     <ul>
       <li>
         <a href="/">
-          <img src="/images/location.png" alt="location icon" />
+          <img class="icon" src="/images/location.png" alt="location icon" />
           <span class="info">{{ $t('sidebarLocation') }}</span>
         </a>
       </li>
       <li>
         <a href="/">
-          <img src="/images/gmail.png" alt="gmail icon" />
+          <img class="icon" src="/images/gmail.png" alt="gmail icon" />
           <span class="info">{{ $t('sidebarEmail') }}</span>
         </a>
       </li>
       <li>
         <a href="/">
-          <img src="/images/github.png" alt="github icon" />
+          <img class="icon" src="/images/github.png" alt="github icon" />
           <span class="info">{{ $t('sidebarGithub') }}</span>
         </a>
       </li>
       <li>
         <a href="/">
-          <img src="/images/facebook.png" alt="email icon" />
+          <img class="icon" src="/images/facebook.png" alt="email icon" />
           <span class="info">{{ $t('sidebarFacebook') }}</span>
         </a>
       </li>
       <li>
         <a href="/">
-          <img src="/images/medium.png" alt="medium icon" />
+          <img class="icon" src="/images/medium.png" alt="medium icon" />
           <span class="info">{{ $t('sidebarMedium') }}</span>
         </a>
       </li>
       <li>
         <a href="/">
-          <img src="/images/medium.png" alt="medium icon" />
+          <img class="icon" src="/images/medium.png" alt="medium icon" />
           <span class="info">{{ $t('sidebarMedium') }}</span>
         </a>
       </li>
@@ -73,11 +73,9 @@ export default {}
   width: 150px;
   height: 150px;
   margin-bottom: 10px;
-  border: 1px solid var(--primary);
 }
 img {
   width: 25px;
-  margin-right: 15px;
   border-radius: 50%;
 }
 .title {
@@ -107,6 +105,9 @@ li {
 a {
   display: flex;
   align-items: center;
+}
+.icon {
+  margin-right: 15px;
 }
 .icon-location {
   width: 25px;
